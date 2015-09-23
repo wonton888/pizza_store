@@ -20,11 +20,7 @@ describe('Pizza', function(){
 
   it("finds the total cost of the pizza ordered", function(){
     var testPizza = new Pizza(3, "pepperoni", "large");
-    var addTopping1 = "olives";
-    var addTopping2 = "mushrooms";
-    testPizza.addTopping(addTopping1);
-    testPizza.addTopping(addTopping2);
-    expect(testPizza.totalPrice()).to.equal(78);
+    expect(testPizza.totalPrice()).to.equal(66);
   });
 
 });
