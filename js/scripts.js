@@ -21,7 +21,7 @@ Pizza.prototype.totalPrice = function(){
         basePrice = 5 + basePrice;
         break;
   }
-  price = this.quantity*(price);
-  return price;
+  basePrice = this.quantity*(basePrice);
+  return basePrice;
 
 }
