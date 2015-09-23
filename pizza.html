@@ -12,7 +12,12 @@
       <h1>Order a Pizza</h1>
       <form id="new-order">
           <label for="quantity">Enter the number pizzas you want:</label>
-          <input class="form-control" type="number">
+          <select name="quantity" id="quantity" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <br>
           <br>
           <label for="topping">Select the type of toppings you will like:</label>
           <select name="toppings" id="toppings">
@@ -31,9 +36,7 @@
           <br>
           <button type="submit" class="btn btn-success">Calculate total cost</button>
       </form>
-      <div class="total_price">
-          <h2>$ <span class="total_price"></span></h2>
-      </div>
+          <h2>$ <span class="price"></span></h2>
 
   </body>
 </html>

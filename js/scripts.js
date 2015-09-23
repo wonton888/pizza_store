@@ -24,4 +24,21 @@ Pizza.prototype.totalPrice = function(){
   basePrice = this.quantity*(basePrice);
   return basePrice;
 
-}
+};
+
+$(document).ready(function(){
+  var newPizza;
+  $("form#new-order").submit(function(event){
+    event.preventDefault();
+
+    var quantityEntered = parseInt($("select#quantity").val());
+    var toppingEntered = $("select#topping").val();
+    var sizeEntered = $("select#size").val();
+
+    newPizza = new Pizza(quantityEntered, toppingEntered, sizeEntered);
+
+    var result = newPizza.totalPrice();
+
+    $(".price").text(result);
+  });
+});
