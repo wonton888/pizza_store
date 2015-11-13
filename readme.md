@@ -5,7 +5,7 @@ By Adam Won, 22-Sep-2015
 
 An app that allows the user to pre-select a quantity of pizzas (up to 3), three topping options, and two pizza size options.  The app calculates the final costs based on the user's pizza desired selections.
 
-//started project very late//
+
 
 
 Setup
